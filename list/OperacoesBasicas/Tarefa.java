@@ -10,6 +10,6 @@ public class Tarefa{
 
     // Getter
     public String getDescricao(){
-        return descricao
+        return descricao;
     }
 }

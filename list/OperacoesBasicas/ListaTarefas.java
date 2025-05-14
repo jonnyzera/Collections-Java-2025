@@ -1,5 +1,5 @@
 import java.util.List;
-
+import java.util.ArrayList;
 public class ListaTarefas{
     //Atributos
     private List<Tarefa> tarefaList;
@@ -18,12 +18,12 @@ public class ListaTarefas{
     // Remover uma tarefa
     public void removerTarefa(String descricao){
        List<Tarefa> tarefasParaRemover = new ArrayList<>();
-       for (String Tarefa : tarefaList){
+       for(Tarefa t : tarefaList){
         if(t.getDescricao().equalsIgnoreCase(descricao)){
             tarefasParaRemover.add(t);
         }
        }
-       tarefaList.removeAll(tarefasParaRemover)
+       tarefaList.removeAll(tarefasParaRemover);
     }
 
     // Obter total tarefas
@@ -34,5 +34,8 @@ public class ListaTarefas{
     // Obter descrições tarefas
     public void obterDescricoesTarefa(){
        System.out.println(tarefaList);
+    }
+    public static void main(String [] args){
+
     }
 }
