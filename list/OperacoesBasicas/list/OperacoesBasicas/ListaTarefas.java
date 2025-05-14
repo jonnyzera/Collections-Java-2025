@@ -1,3 +1,5 @@
+package list.OperacoesBasicas;
+
 import java.util.List;
 import java.util.ArrayList;
 public class ListaTarefas{
@@ -36,6 +38,15 @@ public class ListaTarefas{
        System.out.println(tarefaList);
     }
     public static void main(String [] args){
+        ListaTarefas list = new ListaTarefas();
+        list.adicionarTarefa("Adicionando a primeiro tarefa");
+        list.adicionarTarefa("Adicionando a primeiro tarefa");
+        list.adicionarTarefa("Adicionando a segunda tarefa");
+        System.out.println("A quantidade total de elementos: " + list.obterNumeroTotalTarefa());
 
+        list.removerTarefa("Adicionando a primeiro tarefa");
+        System.out.println("A quantidade total de agora: " + list.obterNumeroTotalTarefa());
+
+        list.obterDescricoesTarefa();
     }
 }
